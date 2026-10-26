@@ -1,0 +1,58 @@
+/* Custom Interactive Component States */
+.toggle-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.toggle-btn.active {
+    background-color: #D98A6C;
+    color: #ffffff;
+    border-color: #D98A6C;
+    box-shadow: 0 4px 14px rgba(217, 138, 108, 0.4);
+}
+
+.filter-tab.active {
+    background-color: #3D2314;
+    color: #ffffff;
+}
+
+.time-slot {
+    transition: all 0.2s ease;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.time-slot.selected {
+    background-color: #D98A6C;
+    color: #ffffff;
+    border-color: #D98A6C;
+    box-shadow: 0 2px 8px rgba(217, 138, 108, 0.5);
+}
+
+.time-slot.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    background-color: #f3f4f6;
+}
+
+/* Reveal-on-Scroll Observer Animations */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

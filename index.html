@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafiki's Touch — Locs Repair & Professional Face Beats | London, UK</title>
+    <meta name="description" content="Rafiki's Touch by Stephany Kimani. Expert locs repair, starter locs, retwists, and professional makeup artistry in London, UK. Book walk-in or mobile home visit sessions today.">
+    
+    <!-- Tailwind CSS CDN with Rich Brown / Warm Peach Palette -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            brown: '#3D2314',
+                            darkBrown: '#28160B',
+                            peach: '#D98A6C',
+                            peachHover: '#C47557',
+                            cream: '#FBF6F0',
+                            charcoal: '#261C18'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 fill=%22%233D2314%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-size=%2216%22 fill=%22%23D98A6C%22 text-anchor=%22middle%22 font-family=%22sans-serif%22%3ERT%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans text-brand-charcoal bg-white antialiased">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-brand-peach/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between py-3.5">
+            <a href="#home" class="text-2xl font-serif font-bold text-brand-brown tracking-wide">
+                Rafiki's <span class="text-brand-peach">Touch</span>
+            </a>
+            
+            <button id="menu-toggle" class="lg:hidden p-2 text-2xl text-brand-brown focus:outline-none" aria-label="Toggle Navigation Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="main-nav" class="hidden lg:flex lg:items-center lg:space-x-8">
+                <ul id="nav-list" class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8 text-base font-medium"></ul>
+            </nav>
+            
+            <a href="#book" class="hidden lg:inline-flex items-center gap-2 bg-brand-peach text-white px-6 py-2.5 rounded-full font-semibold shadow-md hover:bg-brand-peachHover transition duration-300">
+                <i class="fas fa-calendar-alt text-sm"></i> Book Session
+            </a>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <!-- HERO SECTION -->
+        <section id="home" class="relative min-h-[90vh] flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://picsum.photos/1920/1080?random=1');">
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-brown/90 via-brand-brown/75 to-brand-darkBrown/85"></div>
+            <div class="relative z-10 max-w-5xl mx-auto px-6 py-20">
+                <span class="inline-block px-4 py-1.5 mb-6 text-xs sm:text-sm font-semibold tracking-wider text-brand-peach uppercase bg-brand-peach/10 border border-brand-peach/30 rounded-full">
+                    London's Premier Hair &amp; Makeup Artistry
+                </span>
+                <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-white leading-tight">
+                    Where Locs Find Strength<br>
+                    <span class="text-brand-peach italic font-normal">&amp; Faces Find Their Glow</span>
+                </h1>
+                <p class="text-lg sm:text-2xl text-white/85 mt-6 max-w-3xl mx-auto font-light leading-relaxed">
+                    Master Locs Maintenance, Custom Reconstruction &amp; Flawless Face Beats by Stephany Kimani.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-10">
+                    <a href="#book" class="w-full sm:w-auto bg-brand-peach hover:bg-brand-peachHover text-white px-8 py-4 rounded-full font-semibold text-lg transition duration-300 shadow-lg hover:shadow-brand-peach/30">
+                        Book Studio Walk-In
+                    </a>
+                    <a href="#book" class="w-full sm:w-auto border-2 border-white/80 hover:border-white text-white hover:bg-white hover:text-brand-brown px-8 py-4 rounded-full font-semibold text-lg backdrop-blur-sm transition duration-300">
+                        Request Mobile Home Visit
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-12 border-t border-white/15 text-white/90">
+                    <div>
+                        <p class="text-3xl font-bold text-brand-peach">10+ Years</p>
+                        <p class="text-xs uppercase tracking-wider text-white/70 mt-1">Experience</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-bold text-brand-peach">1,500+</p>
+                        <p class="text-xs uppercase tracking-wider text-white/70 mt-1">Clients Served</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-bold text-brand-peach">100%</p>
+                        <p class="text-xs uppercase tracking-wider text-white/70 mt-1">Natural Care</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-bold text-brand-peach">4.9 ★</p>
+                        <p class="text-xs uppercase tracking-wider text-white/70 mt-1">Client Rating</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="py-24 bg-brand-cream">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="font-serif text-4xl sm:text-5xl font-bold text-brand-brown">Our Craft &amp; Menu</h2>
+                    <p class="text-lg text-gray-600 mt-4">Personalized hair restoration and glam sessions tailored to your lifestyle.</p>
+                </div>
+
+                <!-- Service Category Filters -->
+                <div class="flex flex-wrap justify-center gap-3 mt-10" id="service-filters">
+                    <button class="filter-tab active px-6 py-2.5 rounded-full text-sm font-semibold border border-brand-brown/20 transition" data-category="all">All Craft</button>
+                    <button class="filter-tab bg-white text-brand-charcoal px-6 py-2.5 rounded-full text-sm font-semibold border border-brand-brown/20 transition hover:bg-brand-brown hover:text-white" data-category="locs">Locs Care</button>
+                    <button class="filter-tab bg-white text-brand-charcoal px-6 py-2.5 rounded-full text-sm font-semibold border border-brand-brown/20 transition hover:bg-brand-brown hover:text-white" data-category="makeup">Makeup Artistry</button>
+                    <button class="filter-tab bg-white text-brand-charcoal px-6 py-2.5 rounded-full text-sm font-semibold border border-brand-brown/20 transition hover:bg-brand-brown hover:text-white" data-category="packages">Combo Packages</button>
+                </div>
+
+                <!-- Services Grid -->
+                <div id="services-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12"></div>
+            </div>
+        </section>
+
+        <!-- FEATURES / WHY US SECTION -->
+        <section id="features" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="font-serif text-4xl sm:text-5xl font-bold text-brand-brown">Why Rafiki's Touch?</h2>
+                    <p class="text-lg text-gray-600 mt-4">Elevating beauty through precision, organic products, and client convenience.</p>
+                </div>
+                <div id="features-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16"></div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="py-24 bg-brand-cream overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2 relative">
+                    <div class="absolute -inset-4 bg-brand-peach/20 rounded-3xl transform -rotate-3"></div>
+                    <img src="https://picsum.photos/600/750?random=2" alt="Stephany Kimani, founder of Rafiki's Touch" class="relative rounded-3xl shadow-2xl object-cover w-full max-h-[550px]" loading="lazy">
+                </div>
+                <div class="lg:w-1/2">
+                    <span class="text-brand-peach font-semibold text-sm tracking-wider uppercase">Behind the Magic</span>
+                    <h2 class="font-serif text-4xl sm:text-5xl font-bold text-brand-brown mt-2">Meet <span class="text-brand-peach">Stephany Kimani</span></h2>
+                    <p class="text-lg text-gray-700 mt-6 leading-relaxed">
+                        Stephany Kimani is the visionary founder and lead artist at Rafiki's Touch. With over a decade of dedicated expertise in natural hair therapy and high-definition beauty, she specializes in locs repair, starter locs, palm-rolling, and bespoke makeup artistry across London.
+                    </p>
+                    <p class="text-lg text-gray-700 mt-4 leading-relaxed">
+                        Whether restoring thinning roots or crafting red-carpet glam, Stephany brings warmth, precision, and passion to every appointment.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mt-8 pt-8 border-t border-brand-brown/10">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-award text-2xl text-brand-peach"></i>
+                            <span class="font-medium text-gray-900">Certified Professional</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-sparkles text-2xl text-brand-peach"></i>
+                            <span class="font-medium text-gray-900">Custom Formulations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section id="testimonials" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="font-serif text-4xl sm:text-5xl font-bold text-brand-brown">Kind Words</h2>
+                    <p class="text-lg text-gray-600 mt-4">Real stories from our valued studio and mobile home visit clients.</p>
+                </div>
+                <div id="testimonials-grid" class="grid md:grid-cols-3 gap-8 mt-16"></div>
+            </div>
+        </section>
+
+        <!-- BOOKING & CALCULATOR SECTION -->
+        <section id="book" class="py-24 bg-brand-brown text-white relative">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6">
+                <div class="text-center">
+                    <h2 class="font-serif text-4xl sm:text-5xl font-bold">Book Your Session</h2>
+                    <p class="text-xl text-white/80 mt-4">Select your service, choose a slot, and calculate your estimated cost instantly in GBP (£).</p>
+                </div>
+
+                <!-- Visit Type Toggle -->
+                <div id="booking-type-toggle" class="flex justify-center gap-4 mt-10" role="group" aria-label="Visit Type">
+                    <button class="toggle-btn active" data-type="walkin">
+                        <i class="fas fa-store-alt"></i> London Studio
+                    </button>
+                    <button class="toggle-btn" data-type="homevisit">
+                        <i class="fas fa-home"></i> Mobile Home Visit (+£15)
+                    </button>
+                </div>
+
+                <form id="booking-form" class="mt-10 bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/15 space-y-6">
+                    <input type="hidden" id="visit-type" value="walkin">
+
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="booking-name" class="block text-sm font-medium text-white/90 mb-2">Full Name</label>
+                            <input id="booking-name" type="text" placeholder="Jane Doe" required
+                                   class="w-full px-5 py-3.5 rounded-xl border-0 bg-white/10 text-white placeholder-white/50 focus:ring-2 focus:ring-brand-peach focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="booking-phone" class="block text-sm font-medium text-white/90 mb-2">Phone / WhatsApp</label>
+                            <input id="booking-phone" type="tel" placeholder="+44 700 000 0000" required
+                                   class="w-full px-5 py-3.5 rounded-xl border-0 bg-white/10 text-white placeholder-white/50 focus:ring-2 focus:ring-brand-peach focus:outline-none">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="service-options" class="block text-sm font-medium text-white/90 mb-2">Select Service</label>
+                        <select id="service-options" required
+                                class="w-full px-5 py-3.5 rounded-xl border-0 bg-brand-darkBrown text-white focus:ring-2 focus:ring-brand-peach focus:outline-none">
+                            <option value="" disabled selected>Choose a service...</option>
+                        </select>
+                    </div>
+
+                    <!-- Date & Interactive Time Slot Selector -->
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="booking-date" class="block text-sm font-medium text-white/90 mb-2">Preferred Date</label>
+                            <input id="booking-date" type="date" required
+                                   class="w-full px-5 py-3.5 rounded-xl border-0 bg-white/10 text-white focus:ring-2 focus:ring-brand-peach focus:outline-none [color-scheme:dark]">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-white/90 mb-2">Available Slots</label>
+                            <div id="time-slots" class="grid grid-cols-3 gap-2">
+                                <button type="button" class="time-slot px-3 py-2 rounded-lg border border-white/20 text-xs font-semibold hover:border-brand-peach" data-time="09:00 AM">09:00 AM</button>
+                                <button type="button" class="time-slot px-3 py-2 rounded-lg border border-white/20 text-xs font-semibold hover:border-brand-peach" data-time="11:30 AM">11:30 AM</button>
+                                <button type="button" class="time-slot px-3 py-2 rounded-lg border border-white/20 text-xs font-semibold hover:border-brand-peach" data-time="02:00 PM">02:00 PM</button>
+                                <button type="button" class="time-slot px-3 py-2 rounded-lg border border-white/20 text-xs font-semibold hover:border-brand-peach" data-time="04:30 PM">04:30 PM</button>
+                                <button type="button" class="time-slot px-3 py-2 rounded-lg border border-white/20 text-xs font-semibold hover:border-brand-peach" data-time="06:00 PM">06:00 PM</button>
+                            </div>
+                            <input type="hidden" id="selected-time" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="booking-notes" class="block text-sm font-medium text-white/90 mb-2">Notes or Special Requests</label>
+                        <textarea id="booking-notes" placeholder="Describe hair length, specific makeup style, or postcode details..."
+                                  class="w-full px-5 py-3.5 rounded-xl border-0 bg-white/10 text-white placeholder-white/50 focus:ring-2 focus:ring-brand-peach focus:outline-none" rows="3"></textarea>
+                    </div>
+
+                    <!-- Dynamic Cost & Time Estimator Banner -->
+                    <div id="estimate-banner" class="bg-white/15 p-5 rounded-2xl flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+                        <div>
+                            <p class="text-xs uppercase tracking-wider text-white/70">Estimated Cost &amp; Duration</p>
+                            <p class="text-2xl font-bold text-brand-peach mt-0.5" id="estimate-price">Select a service</p>
+                            <p class="text-xs text-white/80" id="estimate-duration">Est. Duration: --</p>
+                        </div>
+                        <span class="text-xs bg-brand-peach/20 text-brand-peach px-3 py-1.5 rounded-full font-medium border border-brand-peach/40">
+                            Instant Confirmation
+                        </span>
+                    </div>
+
+                    <button type="submit" class="w-full bg-brand-peach text-white font-bold text-lg py-4 rounded-xl hover:bg-brand-peachHover transition duration-300 flex items-center justify-center gap-2 shadow-lg">
+                        <i class="fas fa-calendar-check"></i> Confirm Booking Request
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- CONFIRMATION MODAL -->
+    <div id="booking-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
+        <div class="bg-white rounded-3xl max-w-md w-full p-8 text-center shadow-2xl transform transition-all scale-95 opacity-0" id="modal-content">
+            <div class="w-16 h-16 bg-brand-peach/20 text-brand-peach rounded-full flex items-center justify-center mx-auto text-3xl mb-4">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-brand-brown" id="modal-title">Booking Received!</h3>
+            <p class="text-gray-600 mt-2 text-sm leading-relaxed" id="modal-description"></p>
+            <div class="bg-brand-cream p-4 rounded-xl mt-6 text-left space-y-2 text-xs text-gray-700">
+                <p><strong>Client:</strong> <span id="summary-name"></span></p>
+                <p><strong>Service:</strong> <span id="summary-service"></span></p>
+                <p><strong>Type:</strong> <span id="summary-type"></span></p>
+                <p><strong>Date &amp; Time:</strong> <span id="summary-datetime"></span></p>
+                <p><strong>Total Estimate:</strong> <span id="summary-total" class="text-brand-brown font-bold"></span></p>
+            </div>
+            <button id="close-modal" class="mt-6 w-full bg-brand-brown text-white font-semibold py-3 rounded-xl hover:bg-brand-darkBrown transition">
+                Close &amp; Return
+            </button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-darkBrown text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid md:grid-cols-4 gap-10">
+                <div>
+                    <h3 class="font-serif text-3xl font-bold">Rafiki's <span class="text-brand-peach">Touch</span></h3>
+                    <p class="text-sm mt-4 text-white/70 leading-relaxed">Locs repaired. Faces beat. Confidence restored. Expert hair and beauty services in London, UK.</p>
+                    <div class="flex gap-4 mt-6 text-xl">
+                        <a href="https://lumenlabshq.com" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-peach hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="https://lumenlabshq.com" target="_blank" rel="noopener" aria-label="TikTok" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-peach hover:text-white transition"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://lumenlabshq.com" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-peach hover:text-white transition"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div id="footer-links" class="md:col-span-3 grid sm:grid-cols-3 gap-8"></div>
+            </div>
+            <hr class="border-white/15 mt-12">
+            <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-white/60 mt-8 gap-4">
+                <p>&copy; 2026 Rafiki's Touch. Made by <a href="https://lumenlabshq.com" target="_blank" rel="noopener" class="underline hover:text-brand-peach font-semibold">Lumen Labzz</a> (London, UK).</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                    <a href="#" class="hover:underline">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External Script -->
+    <script src="script.js"></script>
+</body>
+</html>
